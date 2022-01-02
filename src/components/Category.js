@@ -20,22 +20,17 @@ export default function Category({ show }) {
             <Link to="">General</Link>
           </li>
           <li onClick={() => findCategory("Marketing")}>
-            <Link to="">Marketing</Link>
+            <Link to="">Health</Link>
           </li>
           <li onClick={() => findCategory("Finance")}>
             <Link to="">Finance</Link>
           </li>
           <li onClick={() => findCategory("Production")}>
-            <Link to="">Production</Link>
+            <Link to="">Agriculture</Link>
           </li>
-          <li onClick={() => findCategory("Agribusiness")}>
-            <Link to="">Agribusiness</Link>
-          </li>
+
           <li onClick={() => findCategory("Technology")}>
             <Link to="">Technology</Link>
-          </li>
-          <li onClick={() => findCategory("News")}>
-            <Link to="">News</Link>
           </li>
         </ul>
       )}

@@ -52,9 +52,9 @@ function Footer() {
             <div className="upper">
               <div className="topic">About us</div>
               <p>
-                Tiwango is a leading online platform with great interest on
+                Tiwango is a leading online platform with great interest in
                 research articles and blogposts that centres on diverse topics
-                ranging from Finance, Home gardening, Tech and Health realted
+                ranging from Finance, Home gardening, Tech and Health related
                 topics. At Tiwango, our greatest strength lies in our diversity
                 of interest.
               </p>

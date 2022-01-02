@@ -238,7 +238,7 @@ function EditPost(props) {
                     <option value="General">General</option>
                     <option value="Health">Health</option>
                     <option value="Finance">Finance</option>
-                    <option value="Self Development">Self Development</option>
+
                     <option value="Agriculture">Agriculture</option>
                     <option value="Technology">Technology</option>
                   </select>
