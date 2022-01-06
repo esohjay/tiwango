@@ -18,7 +18,7 @@ export default function Post({ post, bookmark }) {
 
         <em>
           posted on{" "}
-          {dayjs(post.createdAt.substring(0, 10)).format("ddd, MMM D YYYY")}
+          {dayjs(post.postDate.substring(0, 10)).format("ddd, MMM D YYYY")}
         </em>
       </div>
       <div className="underline"></div>
