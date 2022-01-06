@@ -233,7 +233,7 @@ const Post = (props) => {
                 </>
               ) : (
                 <>
-                  {post.likes?.counts > 0 && <p>{post?.likes?.counts}</p>}
+                  {post.likes?.counts && <p>{post?.likes?.counts}</p>}
                   <div className="post-options-icon like">
                     {userInfo && !post?.likes?.users.includes(userInfo._id) ? (
                       <FaRegHeart onClick={() => likePost(post._id)} />
