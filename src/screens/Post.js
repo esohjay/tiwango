@@ -33,6 +33,7 @@ import { BOOKMARK_POST_RESET } from "../constants/post";
 const Post = (props) => {
   const history = useHistory();
   const [isPostModal, setIsPostModal] = useState(false);
+  const [showMeassage, setShowMeassage] = useState(false);
 
   const { state: userState } = useUserContext();
   const { userInfo } = userState;
@@ -241,7 +242,9 @@ const Post = (props) => {
                       post?.likes?.users.includes(userInfo._id) ? (
                       <FaHeart onClick={() => likePost(post._id)} />
                     ) : (
-                      <p style={{ fontSize: "14px" }}>likes</p>
+                      <FaRegHeart
+                        onClick={() => setShowMeassage(!showMeassage)}
+                      />
                     )}
                   </div>
                   {userInfo && (
@@ -271,6 +274,15 @@ const Post = (props) => {
                 </>
               )}
             </div>
+            {showMeassage && (
+              <p>
+                You need to{" "}
+                <span>
+                  <Link to="/signin">login</Link>
+                </span>{" "}
+                to like a post
+              </p>
+            )}
             <div className="tag-list">
               <p>Tags:</p>
               {post?.tags?.map((tag, i) => (
